@@ -67,7 +67,7 @@ class Data {
 class Results {
   int? id;
   int? userId;
-  Null? image;
+  String? image;
   String? title;
   String? description;
   String? readStatus;

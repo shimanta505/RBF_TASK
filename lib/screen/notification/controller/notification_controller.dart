@@ -56,6 +56,7 @@ class NotificationController extends GetxController {
         page: pageNumber, size: pageSize);
 
     if (response.status == "200") {
+      unreadNotifications.value = 0;
       notificationList.clear();
       selectedNotification.clear();
       response.data!.results!.forEach((element) {
